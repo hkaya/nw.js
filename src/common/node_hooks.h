@@ -21,6 +21,7 @@ V(RunAtExitFn, "g_run_at_exit", g_run_at_exit_fn)
 #else
 #define V(type, sym, fn) NW_HOOK_MAP(type, sym, fn)
 #endif
+V(VoidVoidFn, "g_stop_nw_instance", g_stop_nw_instance_fn)
 V(VoidHookFn, "g_msg_pump_ctor", g_msg_pump_ctor_fn)
 V(VoidHookFn, "g_msg_pump_dtor", g_msg_pump_dtor_fn)
 V(VoidHookFn, "g_msg_pump_sched_work", g_msg_pump_sched_work_fn)
